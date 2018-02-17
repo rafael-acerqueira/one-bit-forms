@@ -36,6 +36,6 @@ class Api::V1::QuestionsController < Api::V1::ApiController
   end
 
   def question_params
-    params.require(:question).permit(:title, :kind)
+    params.require(:question).permit(:title, :kind, :required)
   end
 end
